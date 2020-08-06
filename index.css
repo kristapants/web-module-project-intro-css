@@ -116,11 +116,14 @@ h2{
 footer{
     background-color: #f9e7dc;
 }
-footer img{
-    width: 100%; /* width of container */
-    height: 300px; /* height of container */
-    overflow: hidden;
+
+footer div{
+    background-image: url('assets/footer_img.jpg');
+    height: 200px;
+    background-position: center 20%;
 }
+
+
 
   /*Intro styling including hero image and introduction*/
 
