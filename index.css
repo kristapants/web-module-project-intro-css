@@ -49,13 +49,13 @@ abbr, acronym {
     padding:0;
     margin:0;
     max-width:100%;
-    /*border:1px solid grey;  (this is to see all divs)*/
+    /*border:1px solid grey;  (uncomment this is to see all divs)*/
   }
 html{
     font-size:62.5%;
   }
 body{
-    line-height:2;
+    line-height:2; /*this is negated by class specific line-heights for the most part new, unclassed sections will have this*/
     font-size:1.5rem;
     font-family: 'Roboto Mono', monospace;
   } 
@@ -83,104 +83,114 @@ h2{
     text-align: justify;
 }
 .button {
-    margin: 3%;
-    padding: 1%;
-    display: inline-block;
-    border-radius: 20px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    letter-spacing: 3px;
-    width: 20%;
-    line-height: normal;
-  }
+  margin: 3%;
+  padding: 1%;
+  display: inline-block;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 3px;
+  width: 170px; /*this width keeps the text in each button at two lines*/
+  height: 59px;/*this width fits two lines of text the best*/
+  line-height: normal;
+  border: 1px solid transparent;
+}
 .button:hover {
-    opacity: .8;
-    color: black;
-  }
+  background-color: white;
+}
 .plan-button {
-    background-color: #ff764e;
-    opacity: 1;
-    transition: 0.1s;
-    margin-left: 15%;
-  }
+  background-color: #ff764e;
+  transition: 0.5s;
+  margin-left: 15%;
+}
+.plan-button:hover{
+  color: #ff764e;
+  border-color: #ff764e;
+}
 .learn-button {
-    background-color: #5ed3eb;
-    opacity: 1;
-    transition: 0.3s;
-  }
+  background-color: #5ed3eb;
+  transition: 0.5s;
+}
+.learn-button:hover{
+  color: #5ed3eb;
+  border-color: #5ed3eb;
+}
 .volunteer-button {
-    background-color: #ffcd69;
-    opacity: 1;
-    transition: 0.3s;
-  }
+  background-color: #ffcd69;
+  transition: 0.5s;
+}
+.volunteer-button:hover{
+  color: #ffcd69;
+  border-color: #ffcd69;
+}
 footer{
-    background-color: #f9e7dc;
+  background-color: #f9e7dc;
 }
 
 footer div{
-    background-image: url('assets/footer_img.jpg');
-    height: 200px;
-    background-position: center 20%;
+  background-image: url('assets/footer_img.jpg');
+  height: 200px;
+  background-position: center 20%;
 }
 
 
 
-  /*Intro styling including hero image and introduction*/
+/*Intro styling including hero image and introduction*/
 
-  .hero{
-      display: inline-block;
-      width: 30%;
-      text-align: center;
-      margin-left: 5%;
-      padding-top: 2%;
-  }
-  .hero-photo {
-      border-radius: 100%;
-      width: 70%;
-      margin: auto;
-      display: inline-block;
+.hero{
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin-left: 5%;
+  padding-top: 2%;
+}
+.hero-photo {
+  border-radius: 100%;
+  width: 70%;
+  margin: auto;
+  display: inline-block;
 
-  }
-  .intro-title{
-      display: inline-block;
-      width: 60%;
-      line-height: normal;
-      text-align: center;
-      margin: auto;
-  }
-  .intro1 {
-      margin-bottom: 3%;
-  }
-  .intro2 {
-      display: inline-block;
-      width:60%;
-      text-align: center;
-  }
+}
+.intro-title{
+  display: inline-block;
+  width: 60%;
+  line-height: normal;
+  text-align: center;
+  margin: auto;
+}
+.intro1 {
+  margin-bottom: 3%;
+}
+.intro2 {
+  display: inline-block;
+  width:60%;
+  text-align: center;
+}
 
-  /*About styling begins here*/
-  .about{
-      width: 90%;
-      text-align: center;
-      margin:3% auto;
-      background-color:#DDB9A3;
-      color: #ffffff;
-      line-height: normal;
-      padding:2%;
-  }
+/*About styling begins here*/
+.about{
+  width: 90%;
+  text-align: center;
+  margin:3% auto;
+  background-color:#DDB9A3;
+  color: #ffffff;
+  line-height: normal;
+  padding:2%;
+}
 
-  /*Tips styling begins here*/
-  .tips{
-      text-align: center;
-      width:35%;
-      margin: 0 auto 0 auto;
-      line-height: normal;
-  }
-  .tips img{
-      width: 30%;
-  }
-  .tips section{
-    margin-bottom: 50px;
-  }
+/*Tips styling begins here*/
+.tips{
+  text-align: center;
+  width:35%;
+  margin: 0 auto 0 auto;
+  line-height: normal;
+}
+.tips img{
+  width: 30%;
+}
+.tips section{
+  margin-bottom: 50px;
+}
 
 
