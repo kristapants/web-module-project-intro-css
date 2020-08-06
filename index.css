@@ -1,9 +1,8 @@
 /*Google font import*/
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto&display=swap');
 /*
 header font
-font-family: 'Londrina Solid', cursive;
+font-family: 'Chelsea Market', cursive;
 
 body font
 font-family: 'Roboto', sans-serif;
@@ -45,8 +44,59 @@ abbr, acronym {
 /*End of CSS reset*/
 
 /*General styling*/
-* {
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+  }
+html{
+    font-size:62.5%;
+  }
+body{
+    line-height:2;
+    font-size:1.5rem;
     font-family: 'Roboto', sans-serif;
-    border:1px dashed gray;
+  } 
+h1{
+    font-family: 'Chelsea Market', cursive;
+    letter-spacing:3px;
+    padding:4% 0;
+    font-size:6rem;
+  }
+h2{
+    font-size: 3rem;
 }
 
+
+/*Guide button styling*/
+.button {
+    margin: 0 25px;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 150px;
+  }
+.button:hover {
+    opacity: 0.75;
+    color: black;
+  }
+.plan-button {
+    background-color: #ff764e;
+    opacity: 1;
+    transition: 0.3s;
+  }
+.learn-button {
+    background-color: #5ed3eb;
+    opacity: 1;
+    transition: 0.3s;
+  }
+.volunteer-button {
+    background-color: #ffcd69;
+    opacity: 1;
+    transition: 0.3s;
+  }
