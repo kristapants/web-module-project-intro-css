@@ -1,11 +1,11 @@
 /*Google font import*/
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
 /*
 header font
 font-family: 'Chelsea Market', cursive;
 
 body font
-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
 */
 
 /* Beginning of CSS reset*/
@@ -49,6 +49,7 @@ abbr, acronym {
     padding:0;
     margin:0;
     max-width:100%;
+    /*border:1px solid grey;  (this is to see all divs)*/
   }
 html{
     font-size:62.5%;
@@ -56,39 +57,51 @@ html{
 body{
     line-height:2;
     font-size:1.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
   } 
 h1{
     font-family: 'Chelsea Market', cursive;
     letter-spacing:3px;
     padding:4% 0;
-    font-size:6rem;
+    font-size:5rem;
+    display: inline-block;
+    width: auto;
+    text-align: center;
   }
 h2{
-    font-size: 3rem;
+    font-size: 2rem;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+.attention{
+    font-weight: bold;
 }
 
-
-/*Guide button styling*/
+/*Header and footer styling here*/
+.guide{
+    text-align: justify;
+}
 .button {
-    margin: 0 25px;
-    padding: 20px;
+    margin: 3%;
+    padding: 1%;
     display: inline-block;
     border-radius: 20px;
     color: white;
     text-decoration: none;
+    text-align: center;
     letter-spacing: 3px;
-    font-weight: bold;
-    width: 150px;
+    width: 20%;
   }
 .button:hover {
-    opacity: 0.75;
+    opacity: .8;
     color: black;
   }
 .plan-button {
     background-color: #ff764e;
     opacity: 1;
-    transition: 0.3s;
+    transition: 0.1s;
+    margin-left: 10%;
   }
 .learn-button {
     background-color: #5ed3eb;
@@ -100,3 +113,61 @@ h2{
     opacity: 1;
     transition: 0.3s;
   }
+footer{
+    background-color: #f9e7dc;
+}
+footer img{
+    width: 100%; /* width of container */
+    height: 300px; /* height of container */
+    overflow: hidden;
+}
+
+  /*Intro styling including hero image and introduction*/
+
+  .hero{
+      display: inline-block;
+      width: 30%;
+      text-align: center;
+  }
+  .hero-photo {
+      border-radius: 100%;
+      width: 70%;
+      margin-top: 5%;
+      display: inline-block;
+
+  }
+  .intro-title{
+      display: inline-block;
+      width: 70%;
+      line-height: normal;
+      text-align: center;
+  }
+  .intro1 {
+      margin-bottom: 3%;
+  }
+  .intro2 {
+      display: inline-block;
+      width:60%;
+      text-align: center;
+  }
+
+  /*About styling begins here*/
+  .about{
+      width: 90%;
+      text-align: center;
+      margin:3% auto;
+      background-color:#DDB9A3;
+      color: #ffffff;
+  }
+
+  /*Tips styling begins here*/
+  .tips{
+      text-align: center;
+      width:50%;
+      margin: 0 auto 5% auto;
+  }
+  .tips img{
+      width: 20%;
+  }
+
+
