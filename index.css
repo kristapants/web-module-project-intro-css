@@ -63,13 +63,13 @@ h1{
     font-family: 'Chelsea Market', cursive;
     letter-spacing:3px;
     padding:4% 0;
-    font-size:5rem;
+    font-size:4rem;
     display: inline-block;
     width: auto;
     text-align: center;
   }
 h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline-block;
     width: auto;
     text-align: center;
@@ -92,6 +92,7 @@ h2{
     text-align: center;
     letter-spacing: 3px;
     width: 20%;
+    line-height: normal;
   }
 .button:hover {
     opacity: .8;
@@ -101,7 +102,7 @@ h2{
     background-color: #ff764e;
     opacity: 1;
     transition: 0.1s;
-    margin-left: 10%;
+    margin-left: 15%;
   }
 .learn-button {
     background-color: #5ed3eb;
@@ -131,19 +132,22 @@ footer div{
       display: inline-block;
       width: 30%;
       text-align: center;
+      margin-left: 5%;
+      padding-top: 2%;
   }
   .hero-photo {
       border-radius: 100%;
       width: 70%;
-      margin-top: 5%;
+      margin: auto;
       display: inline-block;
 
   }
   .intro-title{
       display: inline-block;
-      width: 70%;
+      width: 60%;
       line-height: normal;
       text-align: center;
+      margin: auto;
   }
   .intro1 {
       margin-bottom: 3%;
@@ -161,16 +165,22 @@ footer div{
       margin:3% auto;
       background-color:#DDB9A3;
       color: #ffffff;
+      line-height: normal;
+      padding:2%;
   }
 
   /*Tips styling begins here*/
   .tips{
       text-align: center;
-      width:50%;
-      margin: 0 auto 5% auto;
+      width:35%;
+      margin: 0 auto 0 auto;
+      line-height: normal;
   }
   .tips img{
       width: 20%;
+  }
+  .tips section{
+    margin-bottom: 50px;
   }
 
 
